@@ -1,0 +1,565 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    /* font-family: 'Josefin Sans', sans-serif; */
+    font-family: 'Poppins', sans-serif;
+    max-height: 100vh;
+    background-color: #EAEBED;
+}
+
+/*nav */
+header {
+    padding: 1.7rem 1rem;
+    backdrop-filter: blur(10px);
+    background-color: aquamarine;
+    /* background-color: transparent; */
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    margin: auto;
+    align-items: center;
+}
+
+.logo {
+    font-size: 1.3rem;
+    font-weight: 800;
+    margin-left: 130px;
+}
+
+.logo a {
+    color: #113D6B;
+    text-decoration: none;
+}
+
+nav a {
+    color: #113D6B;
+    text-decoration: none;
+    font-size: .97rem;
+    font-weight: 600;
+    letter-spacing: .7px;
+    padding: 1rem;
+    padding: 0.4rem 1rem;
+}
+
+nav a.active,
+nav a:hover {
+    background-color: #113D6B;
+    color: #fff;
+    border-radius: 1rem;
+    transition: all.3s ease-in-out;
+}
+
+#click {
+    display: none;
+}
+
+.menu {
+    display: none;
+}
+
+/* Nav */
+
+/* section {
+    margin: 2rem 8.5rem;
+} */
+
+.main {
+    display: grid;
+    grid-template-columns: 5% repeat(2, 1fr);
+    column-gap: 1.5rem;
+    justify-content: space-between;
+    align-items: center;
+    margin: 5rem auto;
+}
+
+.main h1 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.main p {
+    margin-top: 1rem;
+    font-size: .98rem;
+}
+
+.social {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.4rem;
+    margin-top: 1.7rem;
+}
+
+.social a {
+    color: #113D6B;
+    font-size: 1rem;
+    border: 1.6px solid #113D6B;
+    border-radius: 50%;
+    padding: .35rem;
+    text-align: center;
+    width: 26px;
+}
+
+.social a:hover {
+    color: #fff;
+    background-color: #113D6B;
+    transition: all .3s ease-in-out;
+}
+
+.main h1 span:nth-child(1) {
+    font-size: 1.5rem;
+}
+
+.button button {
+    background-color: transparent;
+    border: 1px solid #113D6B;
+    border-radius: 0.4rem;
+    margin-top: 2rem;
+    cursor: pointer;
+    padding: 0.8rem 1.2rem;
+}
+
+.button button:hover {
+    background-color: #113D6B;
+    color: #fff;
+    transition: all .3s ease-in-out;
+    transform: scale(.91);
+}
+
+.images {
+    background-image: url('https://task025.w3spaces.com/graph6.png');
+    background-repeat: no-repeat;
+    background-position: 0 -75px;
+    background-position: 0px -74px;
+}
+
+.intro-image {
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+    box-shadow: 5px 10px 8px 10px #888888;
+}
+
+.main .detail .button a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #03a9f4;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-cont-1 {
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* padding: 10px; */
+    margin: 20px;
+    border-radius: 10px;
+    /* background-color: beige; */
+    box-shadow: 5px 10px 8px #888888;
+}
+
+
+.card-cont {
+    display: flex;
+    height: 480px;
+}
+
+
+.project-title {
+    text-align: center;
+}
+
+.card-image {
+    width: 300px;
+    height: 300px;
+    border-radius: 10px;
+}
+
+.card-des {
+    height: 300px;
+    width: 300px;
+    text-align: center;
+}
+
+.card-button {
+    border: 2px solid black;
+    background-color: #0e0e3e;
+    color: white;
+    width: 200px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* min-height: 100vh; */
+    max-width: 100%;
+    /* background: pink; */
+}
+
+.project-container h2 {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 1200px;
+    flex-wrap: wrap;
+    padding: 40px 0px;
+}
+
+.card-container .card {
+    position: relative;
+    width: 320px;
+    height: 440px;
+    box-shadow: inset 5px 5px 5px skyblue,
+        inset -5px -5px 5px skyblue,
+        5px 5px 5px skyblue,
+        -5px -5px 5px skyblue;
+    border-radius: 15px;
+    margin: 30px;
+}
+
+.card-container .card .box {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    right: 20px;
+    bottom: 20px;
+    background: whitesmoke;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+}
+
+.card-container .card:hover .box {
+    transform: translateY(-50px);
+    /* transform: scale(1.2); */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+    background: linear-gradient(45deg, #b95ce4, #4f29cd);
+}
+
+.card-container .card .box .content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-container .card .box .content h3 {
+    font-size: 1.8em;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.card-container .card .box .content p {
+    font-size: 1em;
+    font-weight: 300;
+    color: #777;
+    z-index: 1;
+    transition: 0.5s;
+}
+
+.card-container .card:hover .box .content h3,
+.card-container .card:hover .box .content p {
+    color: #fff;
+}
+
+.card-container .card .box .content a {
+    position: relative;
+    display: inline-block;
+    padding: 8px 20px;
+    background: #03a9f4;
+    margin-top: 15px;
+    border-radius: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: 400;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.card-container .card:hover .box .content a {
+    background: #ff568f;
+}
+
+.contact-container {
+    z-index: 12;
+    max-width: 1050px;
+    width: 100%;
+    /* background: #fff; */
+    border-radius: 12px;
+    margin: 0 20px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.15);
+}
+
+.contact-container .contact-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+}
+
+.contact-content .image-box {
+    max-width: 55%;
+}
+
+.contact-content .image-box img {
+    width: 100%;
+}
+
+.contact-content .topic {
+    font-size: 22px;
+    font-weight: 500;
+    color: #ba24c2;
+}
+
+.contact-content form {
+    width: 40%;
+    margin-right: 30px;
+}
+
+.contact-content .input-box {
+    height: 50px;
+    width: 100%;
+    margin: 16px 0;
+    position: relative;
+}
+
+.contact-content .input-box input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    font-size: 16px;
+    outline: none;
+    padding-left: 16px;
+    background: #fae9fb;
+    border: 2px solid transparent;
+    transition: all 0.3s ease;
+}
+
+.contact-content .input-box input:focus,
+.contact-content .input-box input:valid {
+    border-color: #ba24c2;
+    background-color: #fff;
+}
+
+.contact-content .input-box label {
+    position: absolute;
+    left: 18px;
+    top: 50%;
+    color: #636c72;
+    font-size: 15px;
+    pointer-events: none;
+    transform: translateY(-50%);
+    transition: all 0.3s ease;
+}
+
+.contact-content .input-box input:focus~label,
+.contact-content .input-box input:valid~label {
+    top: 0;
+    left: 12px;
+    display: 14px;
+    color: black;
+    background: #fff;
+}
+
+.contact-content .message-box {
+    min-height: 100px;
+    position: relative;
+}
+
+.contact-content .message-box textarea {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    resize: none;
+    background: #fae9fb;
+    border: 2px solid transparent;
+    border-radius: 6px;
+    outline: none;
+    transition: all 0.3s ease;
+}
+
+.contact-content .message-box textarea:focus {
+    border-color: #ba24c2;
+    background-color: #fff;
+}
+
+.contact-content .message-box label {
+    position: absolute;
+    font-size: 16px;
+    color: #636c72;
+    left: 18px;
+    top: 6px;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+
+.contact-content .message-box textarea:focus~label {
+    left: 12px;
+    top: -10px;
+    color: black;
+    font-size: 14px;
+    background: #fff;
+}
+
+.contact-content .input-box input[type="submit"] {
+    color: #fff;
+    background: #ba24c2;
+    padding-left: 0;
+    font-size: 0.8em;
+    font-weight: 500;
+    cursor: pointer;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.contact-content .input-box input[type="submit"]:hover {
+    background-color: #d43ddb;
+}
+
+.footer {
+    background-color: #191940;
+}
+
+@media (max-width:1000px) {
+    .contact-container .contact-content .image-box img {
+        display: none;
+    }
+
+    /* .contact-content .image-box {
+        max-width: 70%;
+    } */
+
+    .contact-content {
+        padding: 10px 0;
+    }
+
+    .contact-content form {
+        width: 100%;
+    }
+}
+
+
+@media only screen and (max-width: 1024px) {
+    section {
+        margin: 2rem 2.5rem;
+    }
+}
+
+@media only screen and (max-width:768px) {
+    html {
+        font-size: 95%;
+    }
+
+    header {
+        max-width: 100%;
+    }
+
+    section {
+        margin: 0rem 1.5rem;
+    }
+
+    .images {
+        background-position: center;
+        background-size: cover;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .menu {
+        display: block;
+        font-size: 1.5rem;
+        font-weight: bold;
+        color: #113D6B;
+    }
+
+    header {
+        padding: 0.7rem 1rem;
+        align-items: center;
+        max-width: 100%;
+    }
+
+    nav {
+        position: absolute;
+        display: grid;
+        top: 75px;
+        width: 100%;
+        text-align: center;
+        background-color: #fff;
+        left: -100%;
+    }
+
+    #click:checked~nav {
+        left: 0%;
+        transition: all 0.3s ease;
+    }
+
+    .logo {
+        margin-left: 20px;
+    }
+
+    section {
+        margin: 1rem 1.5rem;
+    }
+
+    .main {
+        grid-template-columns: repeat(1, 1fr);
+        margin: 0px;
+    }
+
+    .social {
+        justify-content: center;
+    }
+
+    .detail {
+        text-align: center;
+    }
+
+    .card-cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 1100px;
+    }
+
+    .card-container .card {
+        height: 220px;
+    }
+
+    .card-cont-1 {
+        height: 330px;
+    }
+
+    .card-image {
+        height: 200px;
+        width: 200px;
+    }
+
+    .intro-image {
+        margin-top: 20px;
+        margin-left: 40px;
+        width: 80%;
+        height: 200px;
+    }
+}
